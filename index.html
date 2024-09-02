@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+  <img src="images/nature.jpeg">
+  <h1 id="current-time"></h1>
+  <div class="quotes">
+    <p> Today's Quote</p>
+    <h2>Lost Time is never found again.</h2>
+  </div>
+</div>
+<script>
+    let time=document.getElementById("current-time");
+     setInterval(()=>{
+        let d =new Date();
+        time.innerHTML= d.toLocaleTimeString();
+     },1000)
+    
+</script>
+</body>
+</html>
